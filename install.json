@@ -11,8 +11,10 @@
   }, {
     "method": "set",
     "params": {
-      "config.json": {
-        "key": "{{input.key}}"
+      "self": {
+        "config.json": {
+          "key": "{{input.key}}"
+        }
       }
     }
   }]
