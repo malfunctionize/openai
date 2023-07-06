@@ -2,7 +2,7 @@
   "run": [{
     "method": "load",
     "params": {
-      "config": "https://github.com/malfunctionize.git/config.json"
+      "config": "https://github.com/malfunctionize/openai.git/config.json"
     }
   }, {
     "method": "shell.start",
