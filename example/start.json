@@ -1,10 +1,15 @@
 {
   "run": [{
+    "method": "load",
+    "params": {
+      "config": "https://github.com/malfunctionize.git/config.json"
+    }
+  }, {
     "method": "shell.start",
     "params": {
       "path": "chatbot-ui",
       "env": {
-        "OPENAI_API_KEY": "{{self.config.key}}"
+        "OPENAI_API_KEY": "{{input.config.key}}"
       }
     }
   }, {
