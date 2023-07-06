@@ -19,9 +19,14 @@
       }
     }
   }, {
+    "method": "log",
+    "params": {
+      "text": "Saved.."
+    }
+  }, {
     "method": "notify",
     "params": {
-      "html": "API key saved to config.json",
+      "html": "Success! API key saved to config.json. Click to close the window.",
       "action": "close"
     }
   }]
