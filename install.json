@@ -1,0 +1,19 @@
+{
+  "run": [{
+    "method": "input",
+    "params": {
+      "title": "API Key",
+      "form": [{
+        "key": "key",
+        "description": "Enter your OpenAI API Key"
+      }]
+    }
+  }, {
+    "method": "set",
+    "params": {
+      "config.json": {
+        "key": "{{input.key}}"
+      }
+    }
+  }]
+}

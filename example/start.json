@@ -1,0 +1,29 @@
+{
+  "run": [{
+    "method": "shell.start",
+    "params": {
+      "path": "chatbot-ui",
+      "env": {
+        "OPENAI_API_KEY": "{{self.config.key}}"
+      }
+    }
+  }, {
+    "method": "shell.enter",
+    "params": {
+      "message": "npm run dev",
+      "on": [{
+        "event": "/.*started server on.*(http:.+)$/",
+        "return": "{{event.matches[0][1]}}"
+      }]
+    }
+  }, {
+    "method": "notify",
+    "params": {
+      "html": "Launch web ui at {{input}}",
+      "href": "{{input}}",
+      "target": "_blank"
+    }
+  }, {
+    "method": "process.wait"
+  }]
+}

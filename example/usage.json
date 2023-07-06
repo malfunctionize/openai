@@ -1,0 +1,37 @@
+{
+  "run": [{
+    "method": "goto",
+    "params": {
+      "index": "{{ self.config && self.config.key ? 3 : 1 }}"
+    }
+  }, {
+    "method": "input",
+    "params": {
+      "title": "Download OpenAI API",
+      "description": "<a class='btn' target='_blank' href='/pinokio/download?uri=https://github.com/malfunctionize/openai.git'>Download</a>"
+    }
+  }, {
+    "method": "input",
+    "params": {
+      "title": "Set up OpenAI API KEY",
+      "description": "<a class='btn' target='_blank' href='/pinokio?uri=https://github.com/malfunctionize/openai.git/install.json'>Install</a>"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "git clone https://github.com/mckaywrigley/chatbot-ui.git"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "npm i",
+      "path": "chatbot-ui"
+    }
+  }, {
+    "method": "notify",
+    "params": {
+      "html": "Click to Start",
+      "href": "./start.json"
+    }
+  }]
+}
