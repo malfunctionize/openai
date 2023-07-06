@@ -17,5 +17,11 @@
         }
       }
     }
+  }, {
+    "method": "notify",
+    "params": {
+      "html": "API key saved to config.json",
+      "action": "close"
+    }
   }]
 }
