@@ -8,12 +8,14 @@
     "method": "input",
     "params": {
       "title": "Download OpenAI API",
+      "type": "notify",
       "description": "<a class='btn' target='_blank' href='/pinokio/download?uri=https://github.com/malfunctionize/openai.git'>Download</a>"
     }
   }, {
     "method": "input",
     "params": {
       "title": "Set up OpenAI API KEY",
+      "type": "notify",
       "description": "<a class='btn' target='_blank' href='/pinokio?uri=https://github.com/malfunctionize/openai.git/install.json'>Install</a>"
     }
   }, {
@@ -30,7 +32,7 @@
   }, {
     "method": "notify",
     "params": {
-      "html": "Click to Start",
+      "html": "Open start script",
       "href": "./start.json"
     }
   }]

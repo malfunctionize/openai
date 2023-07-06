@@ -3,6 +3,7 @@
     "method": "input",
     "params": {
       "title": "API Key",
+      "type": "notify",
       "form": [{
         "key": "key",
         "description": "Enter your OpenAI API Key"
